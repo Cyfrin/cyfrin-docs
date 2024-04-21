@@ -10,7 +10,6 @@ In this article, you will learn how to get started using Aderyn to analyze your 
 
 Before installing Aderyn, ensure you have the following:
 
-* **Rust**: Aderyn is built in Rust. Before running, you must install Rust and Cargo (Rust's package manager). If you haven't installed Rust yet, follow the instructions on the [official Rust website](https://www.rust-lang.org/learn/get-started).
 * **Aderyn installed:** Follow this guide to learn [how to install Aderyn](installation.md) on your system.
 
 {% hint style="info" %}

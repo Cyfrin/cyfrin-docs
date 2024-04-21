@@ -24,6 +24,8 @@ Aderyn does multiple things, but at its core, it will help you:
 
 3\. **Identify known issues and protect your value:** Competitive auditing platforms can use Cyfrin Aderyn to detect and filter out known issues inside protocol codebases, protecting customers' and auditors' time and value.
 
+**You can check out the Cyfrin Aderyn repo on** [**GitHub**](https://github.com/Cyfrin/aderyn/tree/dev)**.**
+
 ***
 
 ### Cyfrin Aderyn Key Features
