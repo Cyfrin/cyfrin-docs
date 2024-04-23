@@ -76,8 +76,8 @@ let children = contract_definition.children(context);
 Patterns available to you:
 
 1. `.parent(WorkspaceContext)` - From the current AST Node, get its parent AST Node.
-2. `.closest_parent_of_type(WorkspaceContext, NodeType)` - From the current node, traverse up the AST until you find an ancestor of a particular NodeType.
-3. `.parent_chain(WorkspaceContext)` - Get the entire ancestry chain from the current node to the `SourceUnit` node.
+2. `.closest_ancestor_of_type(WorkspaceContext, NodeType)` - From the current node, traverse up the AST until you find an ancestor of a particular NodeType.
+3. `.ancestral_line(WorkspaceContext)` - Get the entire ancestry chain from the current node to the `SourceUnit` node.
 
 **1. `.parent(WorkspaceContext)`**
 
