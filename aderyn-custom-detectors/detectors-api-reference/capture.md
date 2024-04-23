@@ -26,7 +26,7 @@ The `capture!` macro is designed to simplify the process of capturing instances 
 
 * `$self`: The self-reference of the issue detector instance.
 * `$context`: The context in which the AST nodes are being analyzed, typically a reference to [`WorkspaceContext`](workspacecontext.md).
-* `$item`: The item being analyzed, which could be any construct that is capturable (like expressions, statements, etc.).
+* `$item`: The item being analyzed, which could be any construct that is capturable (like Expression, Statement, ModifierDefinition, etc.).
 
 #### Example
 
