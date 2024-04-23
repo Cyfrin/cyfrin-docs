@@ -22,11 +22,13 @@ macro_rules! capture {
 
 The `capture!` macro is designed to simplify the process of capturing instances of issues within the AST during analysis. It abstracts the boilerplate code necessary to check, capture, and store these instances based on their node IDs and sort keys.
 
+Practically, it is responsible for populating the `found_instances` BTreeMap of the detector struct with the desired nodes. 
+
 **Parameters:**
 
 * `$self`: The self-reference of the issue detector instance.
 * `$context`: The context in which the AST nodes are being analyzed, typically a reference to [`WorkspaceContext`](workspacecontext.md).
-* `$item`: The item being analyzed, which could be any construct that is capturable (like Expression, Statement, ModifierDefinition, etc.).
+* `$item`: The item being captured as an issue instance, which could be a specific type of node like `Expression`, `Statement`, `ModifierDefinition`, etc. or even a more general `ASTNode`. 
 
 #### Example
 
