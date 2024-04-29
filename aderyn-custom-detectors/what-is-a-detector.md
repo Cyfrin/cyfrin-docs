@@ -147,9 +147,9 @@ impl IssueDetector for NonReentrantBeforeOthersDetector {
   }
 ```
 
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/nc/non\_reentrant\_before\_others.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/nc/non\_reentrant\_before\_others.rs)
+Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/non\_reentrant\_before\_others.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/non_reentrant_before_others.rs)
 
-In the code above, we’re declaring a new detector called, to which we attach an IssueDetector that implements the [detect()](detectors-api-reference/detect.md) function.
+In the code above, we’re declaring a new detector called `NonReentrantBeforeOthersDetector`, to which we attach an IssueDetector that implements the [detect()](detectors-api-reference/detect.md) function.
 
 Inside the [detect](detectors-api-reference/detect.md)[()](detectors-api-reference/detect.md) function, we can use the **AST representation of our smart contract** to run the logic to find if the modifier is the first assigned to every function.
 
