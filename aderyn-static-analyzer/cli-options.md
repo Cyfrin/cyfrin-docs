@@ -50,16 +50,16 @@ Options:
 **Examples:**
 
 ```
-aderyn . -o my-report.json
+aderyn -o my-report.json
 ```
 
 ```
-aderyn . -o my-report.md
+aderyn -o my-report.md
 ```
 
 ***
 
-### **`-s, --scope <SCOPE>`**&#x20;
+### **`-i, --path-includes <PATH_INCLUDES>`**&#x20;
 
 A string, or list of strings separated by commas that pertain to the filenames/directories in scope. These are the files/directories that Aderyn will be run on.
 
@@ -86,7 +86,7 @@ Note: strings passed to the scope command are case-sensitive.
 
 **Input:**
 
-`aderyn -s src/interfaces`&#x20;
+`aderyn -i src/interfaces`&#x20;
 
 **Output:**
 
@@ -100,7 +100,7 @@ Note: strings passed to the scope command are case-sensitive.
 
 **Input:**
 
-`aderyn --scope Thund`
+`aderyn --path-includes Thund`
 
 **Output:**
 
@@ -113,13 +113,13 @@ Note: strings passed to the scope command are case-sensitive.
 
 ***
 
-### **`-e, --exclude <EXCLUDE>`**&#x20;
+### **`-x, --path-excludes <PATH_EXCLUDE>`**&#x20;
 
-the opposite of `--scope`, this will exclude any files or directories that contain the passed string.
+the opposite of `--path-includes`, this will exclude any files or directories that contain the passed string.
 
 **Input:**
 
-`aderyn -e Thunder`
+`aderyn -x Thunder`
 
 **Output:**
 
@@ -140,7 +140,7 @@ The default behavior is to include the line number, as well as snippets of code 
 
 **Input (default):**
 
-`` aderyn -s Thunder` ``
+`` aderyn -i Thunder` ``
 
 *   Found in src/protocol/ThunderLoan.sol Line: 239
 
@@ -151,8 +151,8 @@ The default behavior is to include the line number, as well as snippets of code 
 **Input (no-snippets):**
 
 ```
-aderyn -s Thunder -n
-aderyn -s Thunder --no-snippets
+aderyn -i Thunder -n
+aderyn -i Thunder --no-snippets
 ```
 
 **Output:**
