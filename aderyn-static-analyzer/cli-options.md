@@ -10,7 +10,7 @@ aderyn [OPTIONS]
 
 ### **`aderyn <ROOT>`**
 
-\- Detects if the current directory is a Foundry project and runs the Aderyn static analyser over it.
+The root directory of your Solidity project.
 
 **Input:**
 
@@ -29,7 +29,7 @@ Rust based Solidity AST analyzer
 Usage: aderyn [OPTIONS] <ROOT>
 
 Arguments:
-  <ROOT>  Foundry or Hardhat project root directory (or path to single solidity file)
+  <ROOT>  Foundry or Hardhat (or other) project root directory 
 
 Options:
   -o, --output <OUTPUT>    Desired file path for the final report (will overwrite existing one) [default: report.md]
