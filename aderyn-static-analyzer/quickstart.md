@@ -23,7 +23,13 @@ Before installing Aderyn, ensure you have the following:
 
 Once [Aderyn is installed on your system](installation.md), you can run it against any Solidity codebase to find vulnerabilities in your code.
 
-In this example, we will use the [aderyn-contracts-playground repository](https://github.com/Cyfrin/aderyn-contracts-playground). You can follow along by cloning it to your system:
+In this example, we will use the [aderyn-contracts-playground repository](https://github.com/Cyfrin/aderyn-contracts-playground).&#x20;
+
+{% hint style="info" %}
+This example codebase uses Foundry. Please [install Foundry](https://book.getfoundry.sh/getting-started/installation) as a prerequisite to working with this example repository.
+{% endhint %}
+
+You can follow along by cloning it to your system.
 
 ```
 git clone https://github.com/Cyfrin/aderyn-contracts-playground.git
@@ -35,15 +41,11 @@ Navigate inside the repository:
 cd aderyn-contracts-playground
 ```
 
-We usually use several smart contracts and tests to try new [detectors](../aderyn-custom-detectors/what-is-a-detector.md). Build the contracts by running:
+We usually use several smart contracts and tests to try new [detectors](../aderyn-custom-detectors/what-is-a-detector.md). Install dependencies and build the contracts by running:
 
 ```
 forge build
 ```
-
-{% hint style="info" %}
-Building your project by running `forge build --ast` will save you time the first time you run Aderyn.
-{% endhint %}
 
 Once your smart contracts have been successfully compiled, run Aderyn using the following command:
 
