@@ -86,6 +86,8 @@ If your project has a `foundry.toml` file in the ROOT, then aderyn will obtain t
 
 `aderyn --src contracts/`
 
+***
+
 ### **`-i, --path-includes <PATH_INCLUDES>`**&#x20;
 
 A string, or list of strings separated by commas that pertain to the filenames/directories in scope. These are the files/directories that Aderyn will be run on.
