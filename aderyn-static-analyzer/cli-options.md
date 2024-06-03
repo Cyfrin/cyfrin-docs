@@ -59,13 +59,40 @@ aderyn -o my-report.md
 
 ***
 
+### **`-s, --src <SOURCE_PATH>`**
+
+The path to the source contracts folder. If not provided, the `ROOT` directory will be used.
+
+If your project has a `foundry.toml` file in the ROOT, then aderyn will obtain this value from it.
+
+**Examples based on the below directory structure:**
+
+```
+└── my_project/
+    ├── hardhat.config.js
+    ├── contracts/
+    │   ├── Apples.sol
+    │   └── Bananas.sol
+    ├── script/
+    │   └── Deploy.dol
+    ├── test/
+    │   ├── Apples.test.js
+    │   └── Bananas.test.js
+    ├── util/
+    └── node_modules/
+```
+
+**Command:**
+
+`aderyn --src contracts/`
+
 ### **`-i, --path-includes <PATH_INCLUDES>`**&#x20;
 
 A string, or list of strings separated by commas that pertain to the filenames/directories in scope. These are the files/directories that Aderyn will be run on.
 
 Note: strings passed to the scope command are case-sensitive.
 
-**Examples will be based on the blow repo:**
+**Examples will be based on the below repo:**
 
 {% code fullWidth="false" %}
 ```

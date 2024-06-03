@@ -6,10 +6,6 @@ Before installing Aderyn, ensure you have the following:
 
 * **Rust**: Aderyn is built in Rust. Before running, you must install Rust and Cargo (Rust's package manager). If you haven't installed Rust yet, follow the instructions on the [official Rust website](https://www.rust-lang.org/learn/get-started).
 
-{% hint style="info" %}
-Aderyn currently only supports Foundry-based projects. If you're using Hardhat, please refer to our GitHub repository for information on [how to contribute](https://github.com/Cyfrin/aderyn/blob/dev/CONTRIBUTING.md).
-{% endhint %}
-
 **Suggested VSCode extensions:**
 
 * [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) - Rust language support for Visual Studio Code
@@ -57,7 +53,7 @@ Now that you have Aderyn installed let's see [how to run it to find vulnerabilit
 
 
 
-### Run Aderyn Using DOcker
+### Run Aderyn Using Docker
 
 You can run Aderyn from a Docker container.
 
