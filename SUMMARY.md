@@ -27,7 +27,7 @@
 
 ***
 
-* [GitHub](https://github.com/Cyfrin/aderyn)
-* [Website](https://cyfrin.io)
 * [Twitter](https://twitter.com)
 * [LinkedIn](https://linkedin.com/company/92718265/)
+* [GitHub](https://github.com/Cyfrin/aderyn)
+* [Support](https://discord.gg/cyfrin)
