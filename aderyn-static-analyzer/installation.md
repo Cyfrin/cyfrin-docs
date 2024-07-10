@@ -1,11 +1,5 @@
 # Installation
 
-### Prerequisites
-
-Before installing Aderyn, ensure you have the following:
-
-* **Rust**: Aderyn is built in Rust. Before running, you must install Rust and Cargo (Rust's package manager). If you haven't installed Rust yet, follow the instructions on the [official Rust website](https://www.rust-lang.org/learn/get-started).
-
 **Suggested VSCode extensions:**
 
 * [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) - Rust language support for Visual Studio Code
@@ -15,43 +9,43 @@ Before installing Aderyn, ensure you have the following:
 
 ### Installing Aderyn
 
-**Step 1: Install Aderyn using cargo**
+#### **Step 1: Install Cyfrinup**
 
-Aderyn is currently installed using Cargo, Rust's package manager. Open your command line interface and run the following command:
+Cyfrinup is a CLI tool that simplifies the installation and management of Cyfrin tools. To install Cyfrinup, run the following command in your terminal:
 
-```bash
-cargo install aderyn
+```
+curl -L https://raw.githubusercontent.com/Cyfrin/aderyn/dev/cyfrinup/install | bash
 ```
 
-This command downloads and installs the Aderyn package.
+#### **Step 2: Update Path**
 
-**Step 2: Verify installation**
+The installer will prompt you to run a `source` command. Either run this command or reload your terminal.
 
-After the installation, you can verify that Aderyn is correctly installed by checking its version. In your command line, execute:
+#### **Step 3: Install Aderyn using Cyfrinup**
 
-```bash
+After installing Cyfrinup, you can use it to install Aderyn. Run the following command in your terminal:
+
+```
+cyfrinup
+```
+
+#### **Step 4: Verify installation**
+
+```
 aderyn --version
 ```
 
-This command should return the installed version of Aderyn, confirming that the installation was successful.
+#### **Future Updates**
 
-**Step 3: Update PATH (if necessary)**
+To update Aderyn to the latest version, you can run the cyfrinup:
 
-If you're unable to run the `aderyn` after installation, you may need to add Cargo's bin directory to your PATH. The exact instructions can vary based on your operating system. Typically, it involves adding `~/.cargo/bin` to your PATH in your shell profile script (like `.bashrc` or `.zshrc`).
-
-**Step 4: Future Updates**
-
-To update Aderyn to the latest version, you can run the install command again:
-
-```bash
-cargo install aderyn
+```
+cyfrinup
 ```
 
-Cargo will replace the existing version with the latest one.
+Cyfrinup will replace the existing version with the latest one.
 
 Now that you have Aderyn installed let's see [how to run it to find vulnerabilities in your codebase](quickstart.md).
-
-
 
 ### Run Aderyn Using Docker
 
