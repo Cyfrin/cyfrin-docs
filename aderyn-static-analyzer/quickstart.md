@@ -67,7 +67,7 @@ Your codebase's full markdown security report will be generated for you now.&#x2
 
 ### Generating the Aderyn security report
 
-When executed, Aderyn will generate a full security report of your Solidity code base. You can find the standard here: [https://github.com/Cyfrin/aderyn/blob/dev/report.md](https://github.com/Cyfrin/aderyn/blob/dev/report.md)
+When executed, Aderyn will generate a full security report of your Solidity code base. You can find the standard here: [https://github.com/Cyfrin/aderyn/blob/dev/reports/report.md](https://github.com/Cyfrin/aderyn/blob/dev/reports/report.md)
 
 You can direct the output to a specific file or change the format to JSON for integration with other tools:
 
