@@ -1,4 +1,4 @@
-# Detectors Quickstart
+# Custom detectors Quickstart
 
 Aderyn makes it easy to build Static Analysis detectors that can adapt to any Solidity codebase and protocol. This guide will teach you how to build, test, and run your custom Aderyn detectors.
 
@@ -15,7 +15,7 @@ Before starting to create your custom Aderyn detectors, ensure you have the foll
 * [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) - Rust language support for Visual Studio Code
 * [Rust Syntax](https://marketplace.visualstudio.com/items?itemName=dustypomerleau.rust-syntax) - Improved Rust syntax highlighting
 
-If you haven't yet, read the [Aderyn quickstart](../aderyn-static-analyzer/quickstart.md) and [what is a detector](what-is-a-detector.md) documentation before getting started.
+If you haven't yet, read the [Aderyn quickstart](../quickstart.md) and [what is a detector](../what-is-a-detector.md) documentation before getting started.
 
 ***
 
@@ -121,7 +121,7 @@ impl IssueDetector for TemplateDetector {
 }
 ```
 
-As we've seen in the [What is a detector section](what-is-a-detector.md) - in the code above, we are:
+As we've seen in the [What is a detector section](../what-is-a-detector.md) - in the code above, we are:
 
 * Declaring a new detector named `TemplateDetector`
 * Implementing an Issue detector with inside the following functions:
@@ -230,9 +230,9 @@ impl IssueDetector for MyFirstDetector {
 }
 ```
 
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs)
+Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/useless_modifier.rs)
 
-The first thing you can notice is the [detect()](detectors-api-reference/detect.md) function, inside of which we're using our [WorkspaceContext](detectors-api-reference/workspacecontext.md) to find all `modifier_definitions`  and `modifier_invocations` inside the [AST](what-is-an-ast.md).&#x20;
+The first thing you can notice is the [detect()](detectors-api-reference/detect.md) function, inside of which we're using our [WorkspaceContext](detectors-api-reference/workspacecontext.md) to find all `modifier_definitions`  and `modifier_invocations` inside the [AST](../what-is-an-ast.md).&#x20;
 
 For each definition, we then check all the invocations, and if a defined modifier has no invocations, it's redundant and **should be removed from the code**. When this happens, we call the [capture()](detectors-api-reference/capture.md) function that will add it to the final report, together with the information defined inside the functions:
 
@@ -242,7 +242,7 @@ For each definition, we then check all the invocations, and if a defined modifie
 * [instances()](detectors-api-reference/instances.md)
 * [name()](detectors-api-reference/name.md)
 
-You can find more [examples of detectors](https://github.com/Cyfrin/aderyn/tree/dev/aderyn\_core/src/detect/low) inside the official GitHub repo.
+You can find more [examples of detectors](https://github.com/Cyfrin/aderyn/tree/dev/aderyn_core/src/detect/low) inside the official GitHub repo.
 
 Once that's done, we call the Ok function, passing true or false based on whether the found\_instances array has items in it or not.
 
@@ -282,7 +282,7 @@ use crate::{
 };
 ```
 
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L4](https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L4)&#x20;
+Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L4](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/detector.rs#L4)&#x20;
 
 Then find the `get_all_issue_detectors` function and add your detector to the vector returned by it:
 
@@ -301,7 +301,7 @@ pub fn get_all_issue_detectors() -> Vec<Box<dyn IssueDetector>> {
 
 ```
 
-Source:[https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L31](https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L31)
+Source:[https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L31](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/detector.rs#L31)
 
 Then, find `IssueDetectorNamePool` in `detector.rs` and add our `MyFirstDetector` to the list:
 
@@ -347,7 +347,7 @@ Lastly, add your custom detector to the `detector_name` `match` statement inside
  }
 ```
 
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L106](https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L106)
+Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L106](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/detector.rs#L106)
 
 Well done! Now your detector will be registered and run every time Aderyn is run locally 🎉
 
@@ -359,7 +359,7 @@ Now it's time to run our newly created detector!
 
 Once your detector has been registered, you can run it locally against any Foundry-based Solidity smart contract codebase.
 
-Similarly to what is explained in the [Aderyn quickstart](../aderyn-static-analyzer/quickstart.md) guide, you can copy and paste the following command in your terminal to run your local Aderyn version, including your custom detectors:
+Similarly to what is explained in the [Aderyn quickstart](../quickstart.md) guide, you can copy and paste the following command in your terminal to run your local Aderyn version, including your custom detectors:
 
 ```
 cargo run -- ./tests/contract-playground 

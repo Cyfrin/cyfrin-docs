@@ -2,7 +2,7 @@
 
 Adapting an **enterprise-level Solidity static analyzer** to your codebase can be daunting. Cyfrin Aderyn solves this by giving smart contract developers and security researchers an o**pen-source tool to easily write, test, run, and contribute** with their custom Aderyn static analysis detectors tailored to their needs.
 
-Suppose you're unfamiliar with the concept of detectors: a detector is a snippet of code that, given a smart contract [Abstract Syntax Tree ](what-is-an-ast.md)(AST), will **verify the presence of vulnerabilities** based on user-defined patterns.&#x20;
+Suppose you're unfamiliar with the concept of detectors: a detector is a snippet of code that, given a smart contract [Abstract Syntax Tree ](what-is-an-ast.md)(AST), will **verify the presence of vulnerabilities** based on user-defined patterns.
 
 If you've ever built a scraper, the concept is very similar.
 
@@ -118,9 +118,9 @@ and not:
      function setOwner(address _owner) external onlyOwner nonReentrant {
 ```
 
-If the nonReentrant modifier isn’t the first assigned, we might incur **reentrancy issues** inside other modifiers.&#x20;
+If the nonReentrant modifier isn’t the first assigned, we might incur **reentrancy issues** inside other modifiers.
 
-With the information in our code's Abstract Syntax Tree  (AST), we can [build a detector](detectors-quickstart.md) that checks through all the modifiers assigned to every function in the codebase and verifies that "nonReentrant" is the first one assigned. If not, it should be reported.
+With the information in our code's Abstract Syntax Tree (AST), we can [build a detector](detectors-quickstart/) that checks through all the modifiers assigned to every function in the codebase and verifies that "nonReentrant" is the first one assigned. If not, it should be reported.
 
 Here's how the detector would look like:
 
@@ -149,9 +149,9 @@ impl IssueDetector for NonReentrantBeforeOthersDetector {
 
 Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/non\_reentrant\_before\_others.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/non_reentrant_before_others.rs)
 
-In the code above, we’re declaring a new detector called `NonReentrantBeforeOthersDetector`, to which we attach an IssueDetector that implements the [detect()](detectors-api-reference/detect.md) function.
+In the code above, we’re declaring a new detector called `NonReentrantBeforeOthersDetector`, to which we attach an IssueDetector that implements the [detect()](detectors-quickstart/detectors-api-reference/detect.md) function.
 
-Inside the [detect](detectors-api-reference/detect.md)[()](detectors-api-reference/detect.md) function, we can use the **AST representation of our smart contract** to run the logic to find if the modifier is the first assigned to every function.
+Inside the [detect](detectors-quickstart/detectors-api-reference/detect.md)[()](detectors-quickstart/detectors-api-reference/detect.md) function, we can use the **AST representation of our smart contract** to run the logic to find if the modifier is the first assigned to every function.
 
 To do it, we:
 
@@ -163,7 +163,7 @@ To do it, we:
 
 As simple as that. Like filtering through our HTML tags, we can traverse the AST representation of our solidity smart contract and write code that finds vulnerabilities while you write them.
 
-Now that you know what a detector is and what it looks like, learn how to [write your custom detector ](detectors-quickstart.md)or find more examples of custom detectors on the [official Aderyn playground GitHub repo](https://github.com/Cyfrin/aderyn-contracts-playground).
+Now that you know what a detector is and what it looks like, learn how to [write your custom detector ](detectors-quickstart/)or find more examples of custom detectors on the [official Aderyn playground GitHub repo](https://github.com/Cyfrin/aderyn-contracts-playground).
 
 ### **Where do I find vulnerability patterns?**
 

@@ -8,7 +8,7 @@ Luckily, Cyfrin Aderyn has a series of smart contracts in the `tests/contracts_p
 
 You can also find the same contracts in the [standalone contracts-playground repository](https://github.com/cyfrin/aderyn-contracts-playground/).
 
-Now, let's say we want to test the detector we've built in the [Detectors quickstart guide](detectors-quickstart.md), whose only job is ensuring that all **modifiers assigned to every function are used** and that there are no useless modifiers.&#x20;
+Now, let's say we want to test the detector we've built in the [Detectors quickstart guide](./), whose only job is ensuring that all **modifiers assigned to every function are used** and that there are no useless modifiers.&#x20;
 
 Simplified, the detector looks like this:
 
@@ -39,7 +39,7 @@ impl IssueDetector for MyFirstDetector {
 }
 ```
 
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs)
+Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/useless_modifier.rs)
 
 To test it, we will use the [OnceModifierExample.sol](https://github.com/Cyfrin/aderyn/blob/dev/tests/contract-playground/src/OnceModifierExample.sol) contract available in the `tests/contracts_playground/contracts_playground` folder:&#x20;
 
@@ -96,7 +96,7 @@ mod useless_modifier_tests {
 }
 ```
 
-Your code should look as follows: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs#L58](https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs#L58)
+Your code should look as follows: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs#L58](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/useless_modifier.rs#L58)
 
 In the code above, we are:
 

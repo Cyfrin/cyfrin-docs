@@ -2,11 +2,11 @@
 
 This page will find common patterns used when developing custom Aderyn detectors.
 
-Check out the official Aderyn GitHub repository for more [examples of detectors and design patterns](https://github.com/Cyfrin/aderyn/tree/dev/aderyn\_core/src/detect).&#x20;
+Check out the official Aderyn GitHub repository for more [examples of detectors and design patterns](https://github.com/Cyfrin/aderyn/tree/dev/aderyn_core/src/detect).
 
 ### Traversing the Abstract Syntax Tree (AST)
 
-When writing a detector, a typical pattern is to find an [AST](what-is-an-ast.md) node (by getting it from the [`WorkspaceContext`](detectors-api-reference/workspacecontext.md) and then traverse the tree to its parent node or a child node for more information.
+When writing a detector, a typical pattern is to find an [AST](../what-is-an-ast.md) node (by getting it from the [`WorkspaceContext`](detectors-api-reference/workspacecontext.md) and then traverse the tree to its parent node or a child node for more information.
 
 An example of traversing _up_ the tree to parent nodes is that you have a specific `VariableDeclaration`but want to know which `ContractDefinition` it is defined in. To do that, you must traverse _up_ the tree.
 
@@ -33,13 +33,13 @@ let my_contract: &ContractDefinition = ...;
 let var_decs: Vec<VariableDeclaration> = ExtractVariableDeclarations::from(my_contract).extracted;
 ```
 
-Note that this obtains _all_ `VariableDeclaration` nodes within that `ContractDefinition`, not just its immediate children. The full list of extractors is defined in [`extractor.rs`](https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/context/browser/extractor.rs).
+Note that this obtains _all_ `VariableDeclaration` nodes within that `ContractDefinition`, not just its immediate children. The full list of extractors is defined in [`extractor.rs`](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/context/browser/extractor.rs).
 
 **2. `.children()`**
 
 From any ASTNode, get the immediate child nodes.
 
-For example, take this Counter contract:&#x20;
+For example, take this Counter contract:
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
@@ -71,7 +71,7 @@ let contract_definition = ...;
 let children = contract_definition.children(context);
 ```
 
-#### Traversing _Up_&#x20;
+#### Traversing _Up_
 
 Patterns available to you:
 
