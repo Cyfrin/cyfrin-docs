@@ -1,12 +1,10 @@
 # Table of contents
 
-* [Page](README.md)
-
 ## 🦜 Moccasin
 
 ***
 
-* [Quick start](quick-start.md)
+* [Quick start](README.md)
 
 ## 💻 Aderyn VS Code
 
