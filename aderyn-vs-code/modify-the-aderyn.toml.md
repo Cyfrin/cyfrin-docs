@@ -1,2 +1,0 @@
-# Modify the aderyn.toml
-

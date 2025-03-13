@@ -10,7 +10,7 @@
 
 * [What is Aderyn VS Code extension?](aderyn-vs-code/what-is-aderyn-vs-code-extension.md)
 * [Installation](aderyn-vs-code/installation.md)
-* [Modify the aderyn.toml](aderyn-vs-code/modify-the-aderyn.toml.md)
+* [Run Aderyn on a custom project](aderyn-vs-code/run-aderyn-on-a-custom-project.md)
 * [Supported detectors](aderyn-vs-code/supported-detector.md)
 
 ## 🔎 Aderyn CLI
