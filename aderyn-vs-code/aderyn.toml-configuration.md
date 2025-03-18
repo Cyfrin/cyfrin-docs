@@ -1,6 +1,7 @@
 # aderyn.toml Configuration
 
-> _**If your project uses Foundry or Hardhat, Aderyn will automatically inherit the configuration from your foundry.toml or hardhat.config file In this case, it is not necessary to create an aderyn.toml file.**_
+> _**If your project uses Foundry or Hardhat, Aderyn will automatically inherit the configuration from your foundry.toml or hardhat.config file.**_\
+> _**In this case, it is not necessary to create an aderyn.toml file.**_
 
 To run Aderyn on a project that does not use a well-known framework like Foundry or Hardhat, configure `aderyn.toml`   for predictable detection. Aderyn may work without configuring this file, but it is strongly recommended that you do.
 
