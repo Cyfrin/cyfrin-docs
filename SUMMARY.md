@@ -9,18 +9,17 @@
 ## 💻 Aderyn VS Code
 
 * [What is Aderyn VS Code extension?](aderyn-vs-code/what-is-aderyn-vs-code-extension.md)
-* [Installation](aderyn-vs-code/installation.md)
-* [Run Aderyn on a custom project](aderyn-vs-code/run-aderyn-on-a-custom-project.md)
+* [Installation & Usage](aderyn-vs-code/installation-and-usage.md)
+* [aderyn.toml Configuration](aderyn-vs-code/aderyn.toml-configuration.md)
 * [Supported detectors](aderyn-vs-code/supported-detector.md)
 
 ## 🔎 Aderyn CLI
 
-* [Supported detectors](aderyn-cli/supported-detector.md)
 * [What is Aderyn?](aderyn-cli/readme.md)
 * [Installation](aderyn-cli/installation.md)
 * [Quickstart](aderyn-cli/quickstart.md)
+* [Supported detectors](aderyn-cli/supported-detector.md)
 * [What is a Detector?](aderyn-cli/what-is-a-detector.md)
-* [Supported Detectors](aderyn-cli/supported-detectors.md)
 * [What is an AST?](aderyn-cli/what-is-an-ast.md)
 * [Custom detectors Quickstart](aderyn-cli/detectors-quickstart/README.md)
   * [Detectors API Reference](aderyn-cli/detectors-quickstart/detectors-api-reference/README.md)

@@ -26,18 +26,71 @@ Outputs the options and arguments available when using Aderyn.
 ```
 Rust based Solidity AST analyzer
 
-Usage: aderyn [OPTIONS] <ROOT>
+Usage: aderyn [OPTIONS] [ROOT] [COMMAND]
+
+Commands:
+  registry  Browse detector registry
+  init      Initialize aderyn.toml in the root directory or in an optional subdirectory
+  help      Print this message or the help of the given subcommand(s)
 
 Arguments:
-  <ROOT>  Foundry or Hardhat (or other) project root directory 
+  [ROOT]
+          Foundry or Hardhat project root directory (or path to single solidity file)
+
+          [default: .]
 
 Options:
-  -o, --output <OUTPUT>    Desired file path for the final report (will overwrite existing one) [default: report.md]
-  -s, --scope <SCOPE>      List of path strings to include, delimited by comma (no spaces). Any solidity file path not containing these strings will be ignored
-  -e, --exclude <EXCLUDE>  List of path strings to exclude, delimited by comma (no spaces). Any solidity file path containing these strings will be ignored
-  -n, --no-snippets        Do not include code snippets in the report (reduces report size in large repos)
-  -h, --help               Print help
-  -V, --version            Print version
+  -s, --src <SRC>
+          Path to the source contracts. Used to avoid analyzing libraries, tests or scripts and focus on the contracts.
+
+          In Foundry projects, it's auto-captured by foundry.toml and it's usually not necessary to provide it.
+
+          In a Hardhat project:
+
+          --src=contracts/
+
+  -i, --path-includes <PATH_INCLUDES>
+          List of path strings to include, delimited by comma (no spaces).
+
+          It allows to include only one or more specific contracts in the analysis: aderyn -i src/MyContract.sol aderyn -i src/MyContract.sol,src/MyOtherContract.sol
+
+  -x, --path-excludes <PATH_EXCLUDES>
+          List of path strings to exclude, delimited by comma (no spaces).
+
+          It allows to exclude one or more specific contracts from the analysis: aderyn -x src/MyContract.sol aderyn -x src/MyContract.sol,src/MyOtherContract.sol
+
+  -o, --output <OUTPUT>
+          Desired file path for the final report (will overwrite existing one)
+
+          [default: report.md]
+
+  -l, --lsp
+          [BETA] Start Aderyn's LSP server on stdout
+
+      --no-snippets
+          Do not include code snippets in the report (reduces report size in large repos)
+
+      --highs-only
+          Only use the high detectors
+
+      --stdout
+          Print the output to stdout instead of a file
+
+      --skip-cloc
+          Skip cloc analysis (line numbers, etc.)
+
+      --skip-update-check
+          Skip checking for new versions of Aderyn
+
+      --auditor-mode
+          Run in Auditor mode, which only outputs manual audit helpers
+
+  -h, --help
+          Print help (see a summary with '-h')
+
+  -V, --version
+          Print version
+
 ```
 {% endcode %}
 
