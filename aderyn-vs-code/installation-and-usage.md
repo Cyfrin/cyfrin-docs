@@ -1,5 +1,7 @@
 # Installation & Usage
 
+> **IMPORTANT: If your operating system is Windows, you must run VSCode using** [**WSL**](https://learn.microsoft.com/en-us/windows/wsl/)**.**
+
 1. In VSCode, open the "Extensions" tab
 2. Search and install "Aderyn"
 3. Open the "Aderyn: Welcome" page (if it hasn't automatically opened)
