@@ -10,3 +10,8 @@ Here’s what you can expect:
 * **Structured tree view:** See all vulnerabilities at a glance and navigate them effortlessly.
 * **AI-powered fixes:** Squiggly lines highlight issues, and AI tools may assist in quick resolution.
 * **Automatic updates and easy setup:** The extension manages Aderyn installations for you.
+
+
+
+✅ **Available now** in the  [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Cyfrin.aderyn).\
+📦 **Source code** hosted on [Github](https://github.com/Cyfrin/vscode-aderyn/)
