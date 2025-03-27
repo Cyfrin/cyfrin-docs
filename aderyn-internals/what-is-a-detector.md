@@ -16,7 +16,7 @@ Let’s say you want to save the biographies of all Twitter users. You would fee
 
 **Detectors and Aderyn essentially work the same way:**
 
-_Overly simplified:_ Aderyn is the scraping library, acting as the scraper; you give it a smart contract (a URL), and it will create a JSON-like representation of your smart contract or code base, called [AST](what-is-an-ast.md) or Abstract Syntax Tree, just like the content of your HTML page, it will contain all the data you need about your smart contract's code.
+_Overly simplified:_ Aderyn is the scraping library, acting as the scraper; you give it a smart contract (a URL), and it will create a JSON-like representation of your smart contract or code base, called AST or Abstract Syntax Tree, just like the content of your HTML page, it will contain all the data you need about your smart contract's code.
 
 Let's say that you have the following code:
 
@@ -84,8 +84,6 @@ The AST of the code above will look as follows:
 }
 ```
 
-Source: [https://astexplorer.net/#/gist/1bf9b4c8449ef55de8057cb47334daf0/3ef42aad949250d3b492c51b67f3739fe2fc5f3d](https://astexplorer.net/#/gist/1bf9b4c8449ef55de8057cb47334daf0/3ef42aad949250d3b492c51b67f3739fe2fc5f3d)
-
 As you can see, the AST contains information like:
 
 * **contract name**
@@ -147,8 +145,6 @@ impl IssueDetector for NonReentrantBeforeOthersDetector {
   }
 ```
 
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/non\_reentrant\_before\_others.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/non_reentrant_before_others.rs)
-
 In the code above, we’re declaring a new detector called `NonReentrantBeforeOthersDetector`, to which we attach an IssueDetector that implements the [detect()](detectors-quickstart/detectors-api-reference/detect.md) function.
 
 Inside the [detect](detectors-quickstart/detectors-api-reference/detect.md)[()](detectors-quickstart/detectors-api-reference/detect.md) function, we can use the **AST representation of our smart contract** to run the logic to find if the modifier is the first assigned to every function.
@@ -167,9 +163,9 @@ Now that you know what a detector is and what it looks like, learn how to [write
 
 ### **Where do I find vulnerability patterns?**
 
-Get access to **8000+ smart contract findings**, **vulnerabilities**, bug bounties, and competitions completely free on [Cyfrin Solodit](https://solodit.xyz).
+Get access to **8000+ smart contract findings**, **vulnerabilities**, bug bounties, and competitions completely free on [Cyfrin Solodit](https://solodit.cyfrin.io).
 
-Learn from the world’s top auditors and create detectors to spot those vulnerabilities while you can, using Cyfrin Aderyn.
+Learn from the world’s top auditors and create detectors using Cyfrin Aderyn to spot vulnerabilities while you can.
 
 ***
 
@@ -177,4 +173,4 @@ Learn from the world’s top auditors and create detectors to spot those vulnera
 
 A detector is a snippet of code that, given a smart contract Abstract Syntax Tree (AST), will verify the presence of vulnerabilities based on user-defined patterns.
 
-Developers can [study vulnerability patterns on Solodit](https://solodit.xyz) and develop their custom detectors, tailored to their codebase, using Cyfrin Aderyn.
+Developers can [study vulnerability patterns on Solodit](https://solodit.cyfrin.io) and develop their custom detectors, tailored to their codebase, using Cyfrin Aderyn.
