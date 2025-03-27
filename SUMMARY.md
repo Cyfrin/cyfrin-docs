@@ -12,26 +12,32 @@
 * [What is Aderyn?](aderyn-cli/readme.md)
 * [Installation](aderyn-cli/installation.md)
 * [Quickstart](aderyn-cli/quickstart.md)
-* [Supported detectors](aderyn-cli/supported-detector.md)
 
 ***
 
 * [CLI Options](cli-options.md)
-* [Aderyn - Ignore specific lines](aderyn-ignore-specific-lines.md)
-* [What is a Detector?](what-is-a-detector.md)
-* [What is an AST?](what-is-an-ast.md)
-* [Custom detectors Quickstart](detectors-quickstart/README.md)
-  * [Detectors API Reference](detectors-quickstart/detectors-api-reference/README.md)
-    * [detect](detectors-quickstart/detectors-api-reference/detect.md)
-    * [capture](detectors-quickstart/detectors-api-reference/capture.md)
-    * [title](detectors-quickstart/detectors-api-reference/title.md)
-    * [description](detectors-quickstart/detectors-api-reference/description.md)
-    * [severity](detectors-quickstart/detectors-api-reference/severity.md)
-    * [name](detectors-quickstart/detectors-api-reference/name.md)
-    * [instances](detectors-quickstart/detectors-api-reference/instances.md)
-    * [WorkspaceContext](detectors-quickstart/detectors-api-reference/workspacecontext.md)
-  * [Testing your detector](detectors-quickstart/testing-your-detector.md)
-  * [Useful Detector Patterns](detectors-quickstart/useful-detector-patterns.md)
+* [Directives to ignore specific lines](directives-to-ignore-specific-lines.md)
+* [Supported detectors](supported-detector.md)
+
+## 💡 Aderyn Internals
+
+* [AST - Abstract Syntax Tree](aderyn-internals/what-is-an-ast.md)
+* [Detector](aderyn-internals/what-is-a-detector.md)
+* [Guide to create custom detectors](aderyn-internals/detectors-quickstart/README.md)
+  * [Detectors API Reference](aderyn-internals/detectors-quickstart/detectors-api-reference/README.md)
+    * [detect](aderyn-internals/detectors-quickstart/detectors-api-reference/detect.md)
+    * [capture](aderyn-internals/detectors-quickstart/detectors-api-reference/capture.md)
+    * [title](aderyn-internals/detectors-quickstart/detectors-api-reference/title.md)
+    * [description](aderyn-internals/detectors-quickstart/detectors-api-reference/description.md)
+    * [severity](aderyn-internals/detectors-quickstart/detectors-api-reference/severity.md)
+    * [name](aderyn-internals/detectors-quickstart/detectors-api-reference/name.md)
+    * [instances](aderyn-internals/detectors-quickstart/detectors-api-reference/instances.md)
+    * [WorkspaceContext](aderyn-internals/detectors-quickstart/detectors-api-reference/workspacecontext.md)
+  * [Testing your detector](aderyn-internals/detectors-quickstart/testing-your-detector.md)
+  * [Useful Detector Patterns](aderyn-internals/detectors-quickstart/useful-detector-patterns.md)
+
+## 🔗 Socials
+
 * [Twitter](https://twitter.com)
 * [LinkedIn](https://linkedin.com/company/92718265/)
 * [GitHub](https://github.com/Cyfrin/aderyn)
