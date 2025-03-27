@@ -39,8 +39,6 @@ impl IssueDetector for MyFirstDetector {
 }
 ```
 
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/useless_modifier.rs)
-
 To test it, we will use the [OnceModifierExample.sol](https://github.com/Cyfrin/aderyn/blob/dev/tests/contract-playground/src/OnceModifierExample.sol) contract available in the `tests/contracts_playground/contracts_playground` folder:&#x20;
 
 ```solidity
@@ -95,8 +93,6 @@ mod useless_modifier_tests {
     }
 }
 ```
-
-Your code should look as follows: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs#L58](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/useless_modifier.rs#L58)
 
 In the code above, we are:
 
