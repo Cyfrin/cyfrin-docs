@@ -1,14 +1,8 @@
 # Table of contents
 
-## 🦜 Moccasin
-
-***
-
-* [Quick start](README.md)
-
 ## 💻 Aderyn VS Code
 
-* [What is Aderyn VS Code extension?](aderyn-vs-code/what-is-aderyn-vs-code-extension.md)
+* [What is Aderyn VS Code extension?](README.md)
 * [Installation & Usage](aderyn-vs-code/installation-and-usage.md)
 * [aderyn.toml Configuration](aderyn-vs-code/aderyn.toml-configuration.md)
 * [Supported detectors](aderyn-vs-code/supported-detector.md)

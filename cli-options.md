@@ -4,6 +4,8 @@ description: Below are options which may be included with the aderyn CLI command
 
 # CLI Options
 
+> If you are looking to leverage these options in VS Code extension, please use  aderyn.toml file instead, [https://cyfrin.gitbook.io/cyfrin-docs/aderyn-vs-code/aderyn.toml-configuration](https://cyfrin.gitbook.io/cyfrin-docs/aderyn-vs-code/aderyn.toml-configuration) That makes the configuration persistent for the project
+
 ```sh
 aderyn [OPTIONS]
 ```

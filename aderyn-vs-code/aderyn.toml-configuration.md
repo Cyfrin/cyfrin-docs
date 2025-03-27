@@ -1,11 +1,14 @@
 # aderyn.toml Configuration
 
-> _**If your project uses Foundry or Hardhat, Aderyn will automatically inherit the configuration from your foundry.toml or hardhat.config file.**_\
-> _**In this case, it is not necessary to create an aderyn.toml file.**_
+> _**If your project uses Foundry or Hardhat, Aderyn will automatically inherit the configuration from your foundry.toml or hardhat.config file.**_
 
 To run Aderyn on a project that does not use a well-known framework like Foundry or Hardhat, configure `aderyn.toml`   for predictable detection. Aderyn may work without configuring this file, but it is strongly recommended that you do.
 
-The `aderyn.toml` file allows you to configure how Aderyn analyzes your smart contracts. Below is a detailed explanation of each configuration option.
+To instantiate the config file for customization purposes, either run `aderyn init`  or if you are using the VS Code extension, run the following command after pressing <kbd>Ctrl/Cmd + Shift + P</kbd>&#x20;
+
+```
+Aderyn: Initialize Config File
+```
 
 ***
 
