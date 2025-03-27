@@ -38,7 +38,7 @@
 
 ## 🔗 Socials
 
-* [Twitter](https://twitter.com)
+* [Twitter](https://x.com/cyfrinresearch)
 * [LinkedIn](https://linkedin.com/company/92718265/)
 * [GitHub](https://github.com/Cyfrin/aderyn)
 * [DIscord](https://discord.gg/cyfrin)
