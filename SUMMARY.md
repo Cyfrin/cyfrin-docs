@@ -41,4 +41,5 @@
 * [Twitter](https://twitter.com)
 * [LinkedIn](https://linkedin.com/company/92718265/)
 * [GitHub](https://github.com/Cyfrin/aderyn)
-* [Support](https://discord.gg/cyfrin)
+* [DIscord](https://discord.gg/cyfrin)
+* [Support](https://support.cyfrin.io)
