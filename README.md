@@ -11,9 +11,7 @@ Here’s what you can expect:
 * **AI-powered fixes:** Squiggly lines highlight issues, and AI tools may assist in quick resolution.
 * **Automatic updates and easy setup:** The extension manages Aderyn installations for you.
 
+Links:
 
-
-Links
-
-**Available now** in the  [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Cyfrin.aderyn).\
-**Source code** hosted on [Github](https://github.com/Cyfrin/vscode-aderyn/)
+* **Available now** in the  [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Cyfrin.aderyn).
+* **Source code** hosted on [Github](https://github.com/Cyfrin/vscode-aderyn/)
