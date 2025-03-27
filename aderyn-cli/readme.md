@@ -26,7 +26,7 @@ Aderyn does multiple things, but at its core, it will help you:
 
 ### Cyfrin Aderyn Key Features
 
-1. **Static Analysis of Solidity Smart Contracts**: Aderyn excels in parsing and [analyzing Solidity smart contracts](quickstart.md), providing insights into potential security risks and inefficiencies.
+1. **Static Analysis of Solidity Smart Contracts**: Aderyn excels in parsing and analyzing Solidity smart contracts, providing insights into potential security risks and inefficiencies. Jump to [Aderyn quickstart](https://cyfrin.gitbook.io/cyfrin-docs/aderyn-cli/quickstart).
 2. **Adapt Aderyn to any codebase**:  Aderyn allows developers to [create custom detectors](../aderyn-internals/detectors-quickstart/) to analyze and find specific code-based vulnerabilities.&#x20;
 3. **Command Line Interface**: Aderyn offers a developer-friendly CLI to customize its settings and your Solidity smart contracts analysis and reports.
 4. **Analyse only what matters**: Aderyn allows specifying particular contracts to be analyzed or excluded, giving users control over the scope of the analysis.
