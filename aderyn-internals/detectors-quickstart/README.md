@@ -230,9 +230,7 @@ impl IssueDetector for MyFirstDetector {
 }
 ```
 
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/useless_modifier.rs)
-
-The first thing you can notice is the detect() function, inside of which we're using our [WorkspaceContext](detectors-api-reference/workspacecontext.md) to find all `modifier_definitions`  and `modifier_invocations` inside the [AST](../what-is-an-ast.md).&#x20;
+The first thing you can notice is the detect() function, inside of which we're using our [WorkspaceContext](detectors-api-reference/workspacecontext.md) to find all `modifier_definitions`  and `modifier_invocations` inside the AST.&#x20;
 
 For each definition, we then check all the invocations, and if a defined modifier has no invocations, it's redundant and **should be removed from the code**. When this happens, we call the [capture()](detectors-api-reference/capture.md) function that will add it to the final report, together with the information defined inside the functions:
 
@@ -282,8 +280,6 @@ use crate::{
 };
 ```
 
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L4](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/detector.rs#L4)&#x20;
-
 Then find the `get_all_issue_detectors` function and add your detector to the vector returned by it:
 
 ```rust
@@ -300,8 +296,6 @@ pub fn get_all_issue_detectors() -> Vec<Box<dyn IssueDetector>> {
 }
 
 ```
-
-Source:[https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L31](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/detector.rs#L31)
 
 Then, find `IssueDetectorNamePool` in `detector.rs` and add our `MyFirstDetector` to the list:
 
@@ -346,8 +340,6 @@ Lastly, add your custom detector to the `detector_name` `match` statement inside
     }
  }
 ```
-
-Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/detector.rs#L106](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/detector.rs#L106)
 
 Well done! Now your detector will be registered and run every time Aderyn is run locally 🎉
 
