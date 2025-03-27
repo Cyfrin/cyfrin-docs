@@ -232,7 +232,7 @@ impl IssueDetector for MyFirstDetector {
 
 Source: [https://github.com/Cyfrin/aderyn/blob/dev/aderyn\_core/src/detect/low/useless\_modifier.rs](https://github.com/Cyfrin/aderyn/blob/dev/aderyn_core/src/detect/low/useless_modifier.rs)
 
-The first thing you can notice is the [detect()](detectors-api-reference/detect.md) function, inside of which we're using our [WorkspaceContext](detectors-api-reference/workspacecontext.md) to find all `modifier_definitions`  and `modifier_invocations` inside the [AST](../what-is-an-ast.md).&#x20;
+The first thing you can notice is the detect() function, inside of which we're using our [WorkspaceContext](detectors-api-reference/workspacecontext.md) to find all `modifier_definitions`  and `modifier_invocations` inside the [AST](../what-is-an-ast.md).&#x20;
 
 For each definition, we then check all the invocations, and if a defined modifier has no invocations, it's redundant and **should be removed from the code**. When this happens, we call the [capture()](detectors-api-reference/capture.md) function that will add it to the final report, together with the information defined inside the functions:
 

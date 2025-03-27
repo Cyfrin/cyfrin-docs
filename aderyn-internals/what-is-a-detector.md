@@ -1,4 +1,4 @@
-# What is a Detector?
+# Detector
 
 Adapting an **enterprise-level Solidity static analyzer** to your codebase can be daunting. Cyfrin Aderyn solves this by giving smart contract developers and security researchers an o**pen-source tool to easily write, test, run, and contribute** with their custom Aderyn static analysis detectors tailored to their needs.
 
@@ -16,7 +16,7 @@ Let’s say you want to save the biographies of all Twitter users. You would fee
 
 **Detectors and Aderyn essentially work the same way:**
 
-_Overly simplified:_ Aderyn is the scraping library, acting as the scraper; you give it a smart contract (a URL), and it will create a JSON-like representation of your smart contract or code base, called [AST](what-is-an-ast.md) or [Abstract Syntax Tree](what-is-an-ast.md), just like the content of your HTML page, it will contain all the data you need about your smart contract's code.
+_Overly simplified:_ Aderyn is the scraping library, acting as the scraper; you give it a smart contract (a URL), and it will create a JSON-like representation of your smart contract or code base, called [AST](what-is-an-ast.md) or Abstract Syntax Tree, just like the content of your HTML page, it will contain all the data you need about your smart contract's code.
 
 Let's say that you have the following code:
 

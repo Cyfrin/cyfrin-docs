@@ -21,7 +21,7 @@ Before installing Aderyn, ensure you have the following:
 
 ### Running Aderyn to analyse your codebase
 
-Once [Aderyn is installed on your system](installation.md), you can run it against any Solidity codebase to find vulnerabilities in your code.
+Once Aderyn is installed on your system, you can run it against any Solidity codebase to find vulnerabilities in your code.
 
 In this example, we will use the [aderyn-contracts-playground repository](https://github.com/Cyfrin/aderyn-contracts-playground).
 

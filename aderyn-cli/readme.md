@@ -27,7 +27,7 @@ Aderyn does multiple things, but at its core, it will help you:
 ### Cyfrin Aderyn Key Features
 
 1. **Static Analysis of Solidity Smart Contracts**: Aderyn excels in parsing and [analyzing Solidity smart contracts](quickstart.md), providing insights into potential security risks and inefficiencies.
-2. **Adapt Aderyn to any codebase**:  Aderyn allows developers to [create custom detectors](broken-reference) to analyze and find specific code-based vulnerabilities.&#x20;
+2. **Adapt Aderyn to any codebase**:  Aderyn allows developers to [create custom detectors](../aderyn-internals/detectors-quickstart/) to analyze and find specific code-based vulnerabilities.&#x20;
 3. **Command Line Interface**: Aderyn offers a developer-friendly CLI to customize its settings and your Solidity smart contracts analysis and reports.
 4. **Analyse only what matters**: Aderyn allows specifying particular contracts to be analyzed or excluded, giving users control over the scope of the analysis.
 5. **Full control over your reports**: The analysis results can be outputted in different formats, including Markdown and JSON, catering to different needs, such as human-readable reports or CI (Continuous Integration) pipeline integration.
@@ -43,7 +43,7 @@ Aderyn is versatile and can be used in various scenarios, such as:
 * **Automated Testing in CI Pipelines**: Integrating Aderyn into CI pipelines allows automated scanning of contracts with each build, ensuring continuous security.
 * **Smart Contract Development and Debugging**: Developers can use Aderyn during the development phase to catch issues early in the development lifecycle.
 * **Custom Security Analysis**: By creating custom detectors, users can tailor the analysis to specific needs or concerns unique to their projects.
-* **Competitive audit finding exclusion list**: Use Aderyn in your competitive audit platform to list findings as "known issues". This is the official tool run before [CodeHawks](https://www.codehawks.com/) competitions.
+* **Competitive audit finding exclusion list**: Use Aderyn in your competitive audit platform to list findings as "known issues". This is the official tool run before [CodeHawks](https://codehawks.cyfrin.io) competitions.
 
 ***
 
