@@ -14,4 +14,4 @@ Here’s what you can expect:
 Links:
 
 * **Available now** in the  [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Cyfrin.aderyn).
-* **Source code** hosted on [Github](https://github.com/Cyfrin/vscode-aderyn/)
+* **Source code** hosted on [Github](https://github.com/Cyfrin/vscode-aderyn/).
