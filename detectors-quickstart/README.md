@@ -15,7 +15,7 @@ Before starting to create your custom Aderyn detectors, ensure you have the foll
 * [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) - Rust language support for Visual Studio Code
 * [Rust Syntax](https://marketplace.visualstudio.com/items?itemName=dustypomerleau.rust-syntax) - Improved Rust syntax highlighting
 
-If you haven't yet, read the [Aderyn quickstart](../quickstart.md) and [what is a detector](../what-is-a-detector.md) documentation before getting started.
+If you haven't yet, read the [Aderyn quickstart](../aderyn-cli/quickstart.md) and [what is a detector](../what-is-a-detector.md) documentation before getting started.
 
 ***
 
@@ -359,7 +359,7 @@ Now it's time to run our newly created detector!
 
 Once your detector has been registered, you can run it locally against any Foundry-based Solidity smart contract codebase.
 
-Similarly to what is explained in the [Aderyn quickstart](../quickstart.md) guide, you can copy and paste the following command in your terminal to run your local Aderyn version, including your custom detectors:
+Similarly to what is explained in the [Aderyn quickstart](../aderyn-cli/quickstart.md) guide, you can copy and paste the following command in your terminal to run your local Aderyn version, including your custom detectors:
 
 ```
 cargo run -- ./tests/contract-playground 

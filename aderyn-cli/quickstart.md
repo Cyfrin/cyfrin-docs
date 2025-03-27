@@ -1,6 +1,6 @@
 # Quickstart
 
-Aderyn uses a series of [detectors](detectors-quickstart/) that, given a set of Solidity smart contracts within a directory, analyze the smart contracts Abstract Syntax Tree ([AST](what-is-an-ast.md)) to find vulnerability patterns and report them in an easy-to-consume markdown document.
+Aderyn uses a series of [detectors](../detectors-quickstart/) that, given a set of Solidity smart contracts within a directory, analyze the smart contracts Abstract Syntax Tree ([AST](../what-is-an-ast.md)) to find vulnerability patterns and report them in an easy-to-consume markdown document.
 
 In this article, you will learn how to get started using Aderyn to analyze your Solidity codebase and generate a report on its vulnerabilities.
 
@@ -41,7 +41,7 @@ Navigate inside the repository:
 cd aderyn-contracts-playground
 ```
 
-We usually use several smart contracts and tests to try new [detectors](what-is-a-detector.md). Install dependencies and build the contracts by running:
+We usually use several smart contracts and tests to try new [detectors](../what-is-a-detector.md). Install dependencies and build the contracts by running:
 
 ```
 forge build
@@ -58,8 +58,8 @@ Replace `[OPTIONS]` with specific [command-line arguments ](../cli-options.md)as
 **What happens when you call `aderyn?`**
 
 * Search for all Solidity files within the directory structure
-* Compile the Solidity files and load their ASTs into its [`WorkspaceContext`](detectors-quickstart/detectors-api-reference/workspacecontext.md)
-* For each available [detector](detectors-quickstart/), call [`detect`](detectors-quickstart/detectors-api-reference/detect.md) and pass in the [`WorkspaceContext`](detectors-quickstart/detectors-api-reference/workspacecontext.md)
+* Compile the Solidity files and load their ASTs into its [`WorkspaceContext`](../detectors-quickstart/detectors-api-reference/workspacecontext.md)
+* For each available [detector](../detectors-quickstart/), call [`detect`](../detectors-quickstart/detectors-api-reference/detect.md) and pass in the [`WorkspaceContext`](../detectors-quickstart/detectors-api-reference/workspacecontext.md)
 
 Your codebase's full markdown security report will be generated for you now.
 
@@ -89,4 +89,4 @@ Inside the generated report, you will find:
 
 ### Modify or create a custom detector
 
-Cyfrin Aderyn gives engineers and security an easy-to-implement framework to develop custom static analysis detectors that can **adapt to any codebase** or use case. You can learn more about creating[ a custom Cyfrin Aderyn detector](detectors-quickstart/) on the related documentation page.
+Cyfrin Aderyn gives engineers and security an easy-to-implement framework to develop custom static analysis detectors that can **adapt to any codebase** or use case. You can learn more about creating[ a custom Cyfrin Aderyn detector](../detectors-quickstart/) on the related documentation page.
