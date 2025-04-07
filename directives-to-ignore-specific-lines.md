@@ -1,6 +1,6 @@
-# Aderyn - Ignore specific lines
+# Directives to ignore specific lines
 
-Static analyzers, including Aderyn, may sometimes report issues that are false positives or that you intentionally choose not to address. Aderyn provides multiple ways to acknowledge these issues and skip their detection for specific lines.
+Aderyn sometimes reports issues that are false positives in addition to legitimate issues. There are a couple of ways (as demonstrated below) to acknowledge this and nudge the analyzer to skip checking those lines where the issue is reported.
 
 **Example**
 
