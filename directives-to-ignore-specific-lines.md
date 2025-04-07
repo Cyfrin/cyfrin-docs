@@ -1,6 +1,6 @@
 # Directives to ignore specific lines
 
-Aderyn sometimes reports issues that are false positives in addition to legitimate issues. There are a couple of ways (as demonstrated below) to acknowledge this and nudge the analyzer to skip checking those lines where the issue is reported.
+Aderyn sometimes reports issues that are false positives in addition to legitimate issues. There are a couple of ways (as demonstrated below) to acknowledge this and nudge Aderyn to skip reporting on those lines.
 
 **Example**
 
