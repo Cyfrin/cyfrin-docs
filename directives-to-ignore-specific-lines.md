@@ -1,6 +1,6 @@
 # Directives to ignore specific lines
 
-Aderyn sometimes reports issues that are false positives in addition to legitimate issues. There are a couple of ways (as demonstrated below) to acknowledge this and nudge Aderyn to skip reporting on those lines.
+There are a couple of ways (as demonstrated below) to nudge Aderyn to skip reporting on certain lines.
 
 **Example**
 
@@ -62,9 +62,9 @@ Note that in this case, you **do not** need to specify the detector name in pare
 
 
 
-
-
-> NOTE
+> NOTE\
+> Aderyn sometimes reports issues that are false positives in addition to legitimate issues. \
+>
 >
 > We're curerntly working on making a semantic separation between directives that are meant to ignore legitimiate issues vs **false positives**. \
 > \
