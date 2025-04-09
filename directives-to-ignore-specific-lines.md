@@ -62,15 +62,18 @@ Note that in this case, you **do not** need to specify the detector name in pare
 
 
 
-> NOTE\
-> Aderyn sometimes reports issues that are false positives in addition to legitimate issues. \
->
->
-> We're curerntly working on making a semantic separation between directives that are meant to ignore legitimiate issues vs **false positives**. \
-> \
-> This allows developers to revisit the false-positives before launching their product. \
-> \
-> That would look something like `//aderyn-fp(detector-name)` It would behave exactly the same way as the above ignore directives.&#x20;
+\
+**Aderyn sometimes reports issues that are false positives in addition to legitimate issues.** \
 
 
+Since it helps to make a semantic separation between directives that are for ignoring legitimiate issues and **false positives** we have introduced a new directive which behaves exactly the same way as the above mentioned ignore directive but it can be invoked by replacing the word `ignore` with `fp` \
+\
+Example
 
+```
+// aderyn-fp(detector-name)
+```
+
+All other variants shown above will work with `fp`
+
+This allows developers to remember to revisit the false positives before launching their protocol.
