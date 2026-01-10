@@ -12,12 +12,9 @@
 * [What is Aderyn?](aderyn-cli/readme.md)
 * [Installation](aderyn-cli/installation.md)
 * [Quickstart](aderyn-cli/quickstart.md)
-
-***
-
-* [CLI Options](cli-options.md)
-* [Directives to ignore specific lines](directives-to-ignore-specific-lines.md)
-* [Supported detectors](supported-detector.md)
+* [CLI Options](aderyn-cli/cli-options.md)
+* [Directives to ignore specific lines](aderyn-cli/directives-to-ignore-specific-lines.md)
+* [Supported detectors](aderyn-cli/supported-detector.md)
 
 ## 🔄 Aderyn CI Assistant
 

@@ -53,7 +53,7 @@ Once your smart contracts have been successfully compiled, run Aderyn using the 
 aderyn [OPTIONS] path/to/your/project
 ```
 
-Replace `[OPTIONS]` with specific [command-line arguments ](../cli-options.md)as needed.
+Replace `[OPTIONS]` with specific [command-line arguments ](cli-options.md)as needed.
 
 **What happens when you call `aderyn?`**
 

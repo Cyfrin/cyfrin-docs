@@ -63,8 +63,7 @@ Note that in this case, you **do not** need to specify the detector name in pare
 
 
 \
-**Aderyn sometimes reports issues that are false positives in addition to legitimate issues.** \
-
+**Aderyn sometimes reports issues that are false positives in addition to legitimate issues.** <br>
 
 Since it helps to make a semantic separation between directives that are for ignoring legitimiate issues and **false positives** we have introduced a new directive which behaves exactly the same way as the above mentioned ignore directive but it can be invoked by replacing the word `ignore` with `fp` \
 \
