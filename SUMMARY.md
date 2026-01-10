@@ -1,41 +1,43 @@
 # Table of contents
 
-## 💻 Aderyn VS Code
+## 🔎 Aderyn
 
-* [What is Aderyn VS Code extension?](README.md)
-* [Installation & Usage](aderyn-vs-code/installation-and-usage.md)
-* [aderyn.toml Configuration](aderyn-vs-code/aderyn.toml-configuration.md)
-* [Supported detectors](aderyn-vs-code/supported-detector.md)
+* [What is Aderyn?](README.md)
+* [Installation](aderyn/installation.md)
+* [Quickstart](aderyn/quickstart.md)
+* [CLI Options](aderyn/cli-options.md)
 
-## 🔎 Aderyn CLI
+## 💻 VS Code Extension <a href="#aderyn-vs-code-extension" id="aderyn-vs-code-extension"></a>
 
-* [What is Aderyn?](aderyn-cli/readme.md)
-* [Installation](aderyn-cli/installation.md)
-* [Quickstart](aderyn-cli/quickstart.md)
-* [CLI Options](aderyn-cli/cli-options.md)
-* [Directives to ignore specific lines](aderyn-cli/directives-to-ignore-specific-lines.md)
-* [Supported detectors](aderyn-cli/supported-detector.md)
+* [What is Aderyn VS Code extension?](aderyn-vs-code-extension/what-is-aderyn-vs-code-extension.md)
+* [Installation & Usage](aderyn-vs-code-extension/installation-and-usage.md)
 
-## 🔄 Aderyn CI Assistant
+## CI Assistant <a href="#aderyn-ci-assistant" id="aderyn-ci-assistant"></a>
 
 * [What is Aderyn CI Assistant ?](aderyn-ci-assistant/what-is-aderyn-ci-assistant.md)
 
-## 💡 Aderyn Internals
+## Project Configuration
 
-* [AST - Abstract Syntax Tree](aderyn-internals/what-is-an-ast.md)
-* [Detector](aderyn-internals/what-is-a-detector.md)
-* [Guide to create custom detectors](aderyn-internals/detectors-quickstart/README.md)
-  * [Detectors API Reference](aderyn-internals/detectors-quickstart/detectors-api-reference/README.md)
-    * [detect](aderyn-internals/detectors-quickstart/detectors-api-reference/detect.md)
-    * [capture](aderyn-internals/detectors-quickstart/detectors-api-reference/capture.md)
-    * [title](aderyn-internals/detectors-quickstart/detectors-api-reference/title.md)
-    * [description](aderyn-internals/detectors-quickstart/detectors-api-reference/description.md)
-    * [severity](aderyn-internals/detectors-quickstart/detectors-api-reference/severity.md)
-    * [name](aderyn-internals/detectors-quickstart/detectors-api-reference/name.md)
-    * [instances](aderyn-internals/detectors-quickstart/detectors-api-reference/instances.md)
-    * [WorkspaceContext](aderyn-internals/detectors-quickstart/detectors-api-reference/workspacecontext.md)
-  * [Testing your detector](aderyn-internals/detectors-quickstart/testing-your-detector.md)
-  * [Useful Detector Patterns](aderyn-internals/detectors-quickstart/useful-detector-patterns.md)
+* [Using the config file - aderyn.toml](project-configuration/using-the-config-file-aderyn.toml.md)
+* [Source code directives to ignore lines](project-configuration/source-code-directives-to-ignore-lines.md)
+* [List of Supported Detectors](project-configuration/list-of-supported-detectors.md)
+
+## Internals
+
+* [AST - Abstract Syntax Tree](internals/what-is-an-ast.md)
+* [Detector](internals/what-is-a-detector.md)
+* [Guide to create custom detectors](internals/detectors-quickstart/README.md)
+  * [Detectors API Reference](internals/detectors-quickstart/detectors-api-reference/README.md)
+    * [detect](internals/detectors-quickstart/detectors-api-reference/detect.md)
+    * [capture](internals/detectors-quickstart/detectors-api-reference/capture.md)
+    * [title](internals/detectors-quickstart/detectors-api-reference/title.md)
+    * [description](internals/detectors-quickstart/detectors-api-reference/description.md)
+    * [severity](internals/detectors-quickstart/detectors-api-reference/severity.md)
+    * [name](internals/detectors-quickstart/detectors-api-reference/name.md)
+    * [instances](internals/detectors-quickstart/detectors-api-reference/instances.md)
+    * [WorkspaceContext](internals/detectors-quickstart/detectors-api-reference/workspacecontext.md)
+  * [Testing your detector](internals/detectors-quickstart/testing-your-detector.md)
+  * [Useful Detector Patterns](internals/detectors-quickstart/useful-detector-patterns.md)
 
 ## 🔗 Socials
 

@@ -1,4 +1,6 @@
-# Supported detectors
+# List of Supported Detectors
+
+Aderyn CLI and Aderyn VS Code extension share the same list of supported detectors.
 
 ### High-severity detectors
 

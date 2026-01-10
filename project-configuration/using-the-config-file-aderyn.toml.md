@@ -1,18 +1,20 @@
-# aderyn.toml Configuration
+# Using the config file - aderyn.toml
 
-> _**If your project uses Foundry or Hardhat, Aderyn will automatically inherit the configuration from your foundry.toml or hardhat.config file.**_
+Aderyn works seamlessly on commonly recognized project structures, i.e., when a `foundry.toml` or `hardhat.config.js` is found in the workspace's root. By default all detectors are run and all files in the project source are included.&#x20;
 
-To run Aderyn on a project that does not use a well-known framework like Foundry or Hardhat, configure `aderyn.toml`   for predictable detection. Aderyn may work without configuring this file, but it is strongly recommended that you do.
+### Initialization
 
-To instantiate the config file for customization purposes, either run `aderyn init`  or if you are using the VS Code extension, run the following command after pressing <kbd>Ctrl/Cmd + Shift + P</kbd>&#x20;
-
-```
-Aderyn: Initialize Config File
-```
+**To customize this behavior of Aderyn, initialize  `aderyn.toml`  config file in the project root by doing either of the following :**\
+\
+1\.  Run `aderyn init`  when using command line version of Aderyn\
+\
+2\. Pick the action `Aderyn: Initialize Config File`  in VS Code command palette   by pressing <kbd>Ctrl/Cmd + Shift + P</kbd>  when using the VS Code extension&#x20;
 
 ***
 
-### **Version**
+#### Guide to understand customization keys
+
+### Version
 
 ```toml
 version = 1
@@ -23,7 +25,7 @@ version = 1
 
 ***
 
-### **Root**
+### Root
 
 ```toml
 root = "."
@@ -35,7 +37,7 @@ root = "."
 
 ***
 
-### **Source Directory (`src`)**
+### Source Directory (`src`)
 
 ```toml
 src = "src/"
@@ -49,7 +51,7 @@ src = "src/"
 
 ***
 
-### **Include Files (`include`)**
+### Include Files (`include`)
 
 ```toml
 include = ["src/counters/Counter.sol", "src/others/"]
@@ -64,7 +66,7 @@ include = ["/interfaces/"]
 
 ***
 
-### **Exclude Files (`exclude`)**
+### Exclude Files (`exclude`)
 
 ```toml
 exclude = ["src/counters/Counter.sol", "src/others/"]
@@ -79,7 +81,7 @@ exclude = ["/interfaces/"]
 
 ***
 
-### **Remappings**
+### Remappings
 
 * **Description**: Aderyn uses remappings to resolve dependencies in your project.
 * **Behavior**:
@@ -88,7 +90,7 @@ exclude = ["/interfaces/"]
 
 ***
 
-### **Environment Variables (`env`)**
+### Environment Variables (`env`)
 
 ```toml
 [env]
@@ -103,11 +105,12 @@ FOUNDRY_PROFILE = "default"
 
 ### Include Or Exclude Detectors
 
-By default, all detectors are run.
+**Description**: To include or exclude to specific detectors, find out the names of the detectors either by hovering over the underlined issue if you are using the VS Code extension or by simply running `aderyn registry` if you are using Command Line version of Aderyn.<br>
 
-To include or exclude to specific detectors, find out the names of the detectors either by hovering over the underlined issue if you are using the VS Code extension or by simply running `aderyn registry` if you are using Command Line version of Aderyn.\
+**Default**: All detectors are run.\
 \
-Then use the following syntax:\
+**Behavior**:\
+Use the following syntax to include or exclude specific detectors\
 \
 Examples
 
@@ -120,6 +123,8 @@ include = ["unspecific-solidity-pragma", "unused-state-variable"]
 [detectors]
 exclude = ["unspecific-solidity-pragma", "unused-state-variable"]
 ```
+
+***
 
 ### Example Configuration
 

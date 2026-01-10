@@ -1,4 +1,4 @@
-# Directives to ignore specific lines
+# Source code directives to ignore lines
 
 There are a couple of ways (as demonstrated below) to nudge Aderyn to skip reporting on certain lines.
 
