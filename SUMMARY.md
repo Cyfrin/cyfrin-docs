@@ -19,6 +19,10 @@
 * [Directives to ignore specific lines](directives-to-ignore-specific-lines.md)
 * [Supported detectors](supported-detector.md)
 
+## 🔄 Aderyn CI Assistant
+
+* [What is Aderyn CI Assistant ?](aderyn-ci-assistant/what-is-aderyn-ci-assistant.md)
+
 ## 💡 Aderyn Internals
 
 * [AST - Abstract Syntax Tree](aderyn-internals/what-is-an-ast.md)

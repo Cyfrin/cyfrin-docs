@@ -10,7 +10,7 @@ Aderyn is an open-source, public-good developer tool. It is a Rust-based solidit
 
 Thanks to its collection of static vulnerability [detectors](../aderyn-internals/what-is-a-detector.md), running Cyfrin Aderyn on your Solidity codebase will **highlight all the potential vulnerabilities**, drastically reducing the potential for unknown issues in your Solidity code and giving you the **time to focus on more complex problems**.
 
-Built using **Rust**, Aderyn i**ntegrates seamlessly into small and enterprise-level development workflows**, offering lighting-fast command-line functionality and a framework to build [custom detectors](broken-reference) to adapt to your codebase.
+Built using **Rust**, Aderyn i**ntegrates seamlessly into small and enterprise-level development workflows**, offering lighting-fast command-line functionality and a framework to build [custom detectors](/broken/pages/Ckl5FeyKmDSmOpk3Z0x2) to adapt to your codebase.
 
 Aderyn does multiple things, but at its core, it will help you:
 
