@@ -101,6 +101,26 @@ FOUNDRY_PROFILE = "default"
 
 ***
 
+### Include Or Exclude Detectors
+
+By default, all detectors are run.
+
+To include or exclude to specific detectors, find out the names of the detectors either by hovering over the underlined issue if you are using the VS Code extension or by simply running `aderyn registry` if you are using Command Line version of Aderyn.\
+\
+Then use the following syntax:\
+\
+Examples
+
+```
+[detectors]
+include = ["unspecific-solidity-pragma", "unused-state-variable"]
+```
+
+```
+[detectors]
+exclude = ["unspecific-solidity-pragma", "unused-state-variable"]
+```
+
 ### Example Configuration
 
 Here’s an example of a complete `aderyn.toml` file:
