@@ -1,13 +1,13 @@
 # Table of contents
 
-## 🔎 Aderyn
+## Aderyn
 
 * [What is Aderyn?](README.md)
 * [Installation](aderyn/installation.md)
 * [Quickstart](aderyn/quickstart.md)
 * [CLI Options](aderyn/cli-options.md)
 
-## 💻 VS Code Extension <a href="#aderyn-vs-code-extension" id="aderyn-vs-code-extension"></a>
+## VS Code Extension <a href="#aderyn-vs-code-extension" id="aderyn-vs-code-extension"></a>
 
 * [What is Aderyn VS Code extension?](aderyn-vs-code-extension/what-is-aderyn-vs-code-extension.md)
 * [Installation & Usage](aderyn-vs-code-extension/installation-and-usage.md)
