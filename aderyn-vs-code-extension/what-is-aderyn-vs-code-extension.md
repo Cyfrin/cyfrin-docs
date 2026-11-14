@@ -1,15 +1,17 @@
 # What is Aderyn VS Code extension?
 
-With the Aderyn VS Code Extension, Smart contract security checks become an effortless part of your development workflow.
+{% hint style="warning" %}
+**The Aderyn VS Code extension is retired and is no longer maintained.** Read the [retirement notice](https://aderyn.cyfrin.io/retirement) and [removal instructions](installation-and-usage.md). This page describes its historical features.
+{% endhint %}
 
-Here’s what you can expect:
+The Aderyn VS Code extension integrated Solidity static analysis into the editor. Its features included:
 
 * **Fast, real-time security checks:** Spot issues when you save your Solidity files without running commands manually.
 * **Structured tree view:** See all vulnerabilities at a glance and navigate them effortlessly.
 * **AI-powered fixes:** Squiggly lines highlight issues, and AI tools may assist in quick resolution.
-* **Automatic updates and easy setup:** The extension manages Aderyn installations for you.
+* **Installation management:** The extension previously managed Aderyn installations. Official CLI installation and update downloads have now been withdrawn.
 
 Links:
 
-* **Available now** in the  [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Cyfrin.aderyn).
-* **Source code** hosted on [Github](https://github.com/Cyfrin/vscode-aderyn/).
+* [Retained Aderyn documentation](https://aderyn.cyfrin.io/).
+* [Source history](https://github.com/Cyfrin/vscode-aderyn/).

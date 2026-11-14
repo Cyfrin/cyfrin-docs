@@ -1,16 +1,18 @@
 # Quickstart
 
+{% hint style="warning" %}
+**Aderyn is retired and is no longer maintained.** This walkthrough is retained as historical reference. Official CLI installation and update downloads have been withdrawn; see the [retirement notice](https://aderyn.cyfrin.io/retirement) and [installation status](installation.md).
+{% endhint %}
+
 Aderyn uses a series of [detectors](../internals/detectors-quickstart/) that, given a set of Solidity smart contracts within a directory, analyze the smart contracts Abstract Syntax Tree ([AST](../internals/what-is-an-ast.md)) to find vulnerability patterns and report them in an easy-to-consume markdown document.
 
-In this article, you will learn how to get started using Aderyn to analyze your Solidity codebase and generate a report on its vulnerabilities.
+This historical walkthrough describes how Aderyn analyzed Solidity code and generated reports. The examples assume an existing installation and may no longer work with current toolchains.
 
 {% embed url="https://youtu.be/j9DxOIa6phE" %}
 
 ### Prerequisites
 
-Before installing Aderyn, ensure you have the following:
-
-* **Aderyn installed:** Follow this guide to learn [how to install Aderyn](installation.md) on your system.
+These examples assumed an existing Aderyn installation. Review the [retirement notice](https://aderyn.cyfrin.io/retirement) before relying on the historical workflow below.
 
 **Suggested VSCode extensions:**
 

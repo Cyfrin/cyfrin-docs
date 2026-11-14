@@ -1,38 +1,18 @@
 # Installation
 
-> **NOTE** Windows users must have WSL installed
+{% hint style="warning" %}
+**Aderyn is retired and is no longer maintained.** This page is retained at its existing URL for users following older installation links. Read the [retirement notice and removal guidance](https://aderyn.cyfrin.io/retirement).
+{% endhint %}
 
-#### Using Cyfrinup
+### Installation and update status
 
-**Cyfrinup** simplifies the installation and management of Cyfrin tools.
+* **Cyfrinup and GitHub releases:** Official Aderyn CLI installation and update downloads have been withdrawn. The retained installer scripts print a retirement notice and exit unsuccessfully. [Up](https://github.com/Cyfrin/Up) remains available for other Cyfrin tools.
+* **Homebrew:** The `cyfrin/tap/aderyn` formula is disabled.
+* **npm:** All published `@cyfrin/aderyn` versions are deprecated. Package archives may still be downloadable, but their installation scripts depend on withdrawn CLI downloads.
+* **crates.io:** Aderyn's published crate versions are yanked. Yanking does not erase crate archives or invalidate existing lockfiles.
 
-Follow the instructions to install [here](https://github.com/Cyfrin/up).
+Do not use the former install or upgrade commands as a supported way to obtain Aderyn. The [retained documentation](https://aderyn.cyfrin.io/) is available for reference.
 
-Run `aderyn --version` to check the installation.
+### Existing installations
 
-**Upgrade older versions by (re)running: `cyfrinup`**
-
-***
-
-#### Using Homebrew
-
-```sh
-brew install cyfrin/tap/aderyn
-```
-
-**Upgrade older versions by running: `brew upgrade cyfrin/tap/aderyn`**
-
-***
-
-#### Using npm
-
-```sh
-npm install @cyfrin/aderyn -g
-```
-
-**Upgrade older versions by (re)running: `npm install @cyfrin/aderyn -g`**
-
-***
-
-If you are installing with Homebrew or npm, ensure that the correct version of Aderyn in your path comes from either the Homebrew or npm global packages directory. If an older version exists at `~/.cyfrin/bin/aderyn`, remove it using `rm -f ~/.cyfrin/bin/aderyn`, as this is no longer the default installation location.
-
+Retirement does not uninstall existing copies. Remove Aderyn using the package manager that installed it, or follow the [removal guidance](https://aderyn.cyfrin.io/retirement) for a manually installed binary. Remove or replace Aderyn steps in maintained CI workflows as well.
