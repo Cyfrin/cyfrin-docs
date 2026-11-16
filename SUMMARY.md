@@ -2,8 +2,9 @@
 
 ## Aderyn
 
+* [Retirement notice](https://aderyn.cyfrin.io/retirement)
 * [What is Aderyn?](README.md)
-* [Installation](aderyn/installation.md)
+* [Installation status & removal](aderyn/installation.md)
 * [Quickstart](aderyn/quickstart.md)
 * [CLI Options](aderyn/cli-options.md)
 

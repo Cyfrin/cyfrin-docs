@@ -6,7 +6,11 @@ description: >-
 
 # What is Aderyn?
 
-Aderyn is an open-source, public-good developer tool. It is a Rust-based solidity smart contract static analyzer designed to help protocol engineers and security researchers find vulnerabilities in Solidity code bases.
+{% hint style="warning" %}
+**Aderyn is retired and is no longer maintained.** These legacy docs remain available for reference. See the [retirement notice and removal guidance](https://aderyn.cyfrin.io/retirement) and the [retained Aderyn documentation](https://aderyn.cyfrin.io/).
+{% endhint %}
+
+Aderyn is an open-source, Rust-based Solidity smart contract static analyzer originally designed to help protocol engineers and security researchers find vulnerabilities in Solidity codebases. The features and examples below describe its historical behavior.
 
 Thanks to its collection of static vulnerability [detectors](internals/what-is-a-detector.md), running Cyfrin Aderyn on your Solidity codebase will **highlight all the potential vulnerabilities**, drastically reducing the potential for unknown issues in your Solidity code and giving you the **time to focus on more complex problems**.
 
@@ -35,20 +39,20 @@ Aderyn does multiple things, but at its core, it will help you:
 
 ***
 
-### Use Cases
+### Historical Use Cases
 
-Aderyn is versatile and can be used in various scenarios, such as:
+Aderyn's documented use cases included:
 
 * **Pre-audit Analysis**: Developers can use Aderyn to identify and address critical, high, and medium-severity issues in smart contracts before sending them for formal audits.
 * **Automated Testing in CI Pipelines**: Integrating Aderyn into CI pipelines allows automated scanning of contracts with each build, ensuring continuous security.
 * **Smart Contract Development and Debugging**: Developers can use Aderyn during the development phase to catch issues early in the development lifecycle.
 * **Custom Security Analysis**: By creating custom detectors, users can tailor the analysis to specific needs or concerns unique to their projects.
-* **Competitive audit finding exclusion list**: Use Aderyn in your competitive audit platform to list findings as "known issues". This is the official tool run before [CodeHawks](https://codehawks.cyfrin.io) competitions.
+* **Competitive audit finding exclusion list**: Aderyn could identify findings to list as "known issues" before an audit competition.
 
 ***
 
-### Contributing
+### Source and maintenance status
 
-Aderyn is a fully open-source smart contract security and auditing tool powered by Cyfrin. It continually evolves, with future updates expected to streamline the installation process, enhance configuration options, and expand its analytical capabilities.
+Aderyn's source history remains available on [GitHub](https://github.com/Cyfrin/aderyn) for reference and reproducibility. Cyfrin no longer maintains Aderyn or provides new releases, fixes or feature updates.
 
-**Cyfrin loves open-source contributions.** **Please provide feedback or help us improve Aderyn by following the** [**Contribution Guidelines**](https://github.com/Cyfrin/aderyn/blob/dev/CONTRIBUTING.md) **on the official GitHub repo.**
+The detector framework and other technical material in these docs are retained as historical reference. For the current retirement status and guidance for existing users, read the [retirement notice](https://aderyn.cyfrin.io/retirement).
